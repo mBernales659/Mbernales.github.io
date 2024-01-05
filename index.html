@@ -1,0 +1,326 @@
+<html lang="eng">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css link-->
+    <link rel="stylesheet" href="css/index.css">
+    <title>M.A.</title>
+    <!--icon-->
+    <link rel="icon" href="css/img/meLogo.svg">
+    
+    <!--font awesome link-->
+    <script src="https://kit.fontawesome.com/d4e2a811bb.js" crossorigin="anonymous"></script>
+    <script src="js/scroll-navbar.js">
+    </script>
+    <!--scroll reveal js link-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <nav>
+            <img src="css/img/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+        <!--    <li><a href="#expertise">Expertise</a></li>         -->
+                <li><a href="#certificate">Certificates</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#projects">Works and Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="container">
+            <div class="header-text">
+                <p>UX/UI Designer | Front End Web Developer</p>
+                <h1>Hi, I'm <span>Marc</span> <br> Adrian from Philippines</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------About-------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="css/img/gradpic.png" alt="my-pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>I'm a college student with a passion for web design, frontend development, and UX/UI designing. While I may not have a lot of experience, I'm interested in applying to your company to contribute my knowledge skills. I'm eager to learn and work hard to help your company succeed</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UX/UI Design</span><br>Web Design</li>
+                            <li><span>System Developemnt</span><br>Desktop Applications Development</li>
+                            <li><span>Digital Design Skills</span><br>Desktop Applications Development</li>
+                            <li><span>Networking Setup</span><br>Basic Networking and Server Administrator</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <!-- Education -->
+                        <ul>
+                            <li><span>2018 - 2020</span><br>ICT from STI College Carmona</li>
+                            <li><span>2020 - Present</span><br>BSIT from STI College Carmona</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------certificate-------->
+
+    <div id="certificate">
+        <div class="container">
+            <h1 class="sub-title">My Certificate</h1>
+            <div class="certificate-list">
+                <div class="certificate">
+                    <img src="css/img/Certi/6a39d17a-3bcd-4dd9-80c6-0543300f841a.png">
+                    <div class="layer">
+                        <h1>Responsive Web Design</h1>
+                        <p>From SoloLearn 2021</p>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="css/img/Certi/Coursera%20D7MQ72JUG7YT.jpg">
+                    <div class="layer">
+                        <h1>HTML, CSS and Javascript for Web Developers</h1>
+                        <p>From Coursera 2020</p>
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <img src="css/img/Certi/4cd1275d-df49-4d95-883b-8c5dadbec689.png">
+                    <div class="layer">
+                        <h1>SQL</h1>
+                        <p>From SoloLearn 2021</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--------accordion-------->
+
+            <button class="accordion"></button>
+            <div class="panel">
+                <div class="panel-list">
+                    <div class="certificate">
+                        <img src="css/img/Certi/Coursera%20EPVU9XKREV6C.jpg">
+                        <div class="layer">
+                            <h1>Introduction to CSS3</h1>
+                            <p>From Coursera 2020</p>
+                        </div>
+                    </div>
+                    <div class="certificate">
+                        <img src="css/img/Certi/Coursera%20KWL78SRYAV2F.jpg">
+                        <div class="layer">
+                            <h1>Programming Foundations with Javascript, HTML and CSS</h1>
+                            <p>From Coursera 2020</p>
+                        </div>
+                    </div>
+                    <div class="certificate">
+                        <img src="css/img/Certi/Coursera%20YRQSMKLCW7FA.jpg">
+                        <div class="layer">
+                            <h1>Introduction to HTML5</h1>
+                            <p>From Coursera 2020</p>
+                        </div>
+                    </div>
+                    <div class="certificate">
+                        <img src="css/img/Certi/097f16d9-4b3a-4e52-a3aa-e20a4b64bdb9.png">
+                        <div class="layer">
+                            <h1>C#</h1>
+                            <p>From SoloLearn 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/accordion.js"></script>
+
+    </div>
+
+    <div id="technologies">
+        <div class="technologies-container">
+            <h1 class="sub-title">Technologies</h1>
+
+          <div class="row">
+            <div class="col">
+                <h1>Languages</h1>
+                <div class="col-content">
+
+                    <img src="css/img/logo/html5.svg" alt="">
+                    <img src="css/img/logo/css3.svg" alt="">
+                    <img src="css/img/logo/js.svg" alt="">
+                    <img src="css/img/logo/scss.svg" alt="">
+                    <img src="css/img/logo/csharp.svg" alt="">
+
+                </div>
+
+            </div>
+            <div class="col">
+                <h1>Libraries and Frameworks</h1>
+
+                <div class="col-content">
+
+                    <img src="css/img/logo/bootstrap5.svg" alt="">
+
+                </div>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+            <h1>Adobe</h1>
+            <div class="col-content">
+
+                <img src="css/img/logo/photoshop.svg" alt="">
+                <img src="css/img/logo/xd.svg" alt="">
+                <img src="css/img/logo/illustrator.svg" alt="">
+
+            </div>
+          </div>
+        </div>
+
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Works And Projects</h1>
+            <div class="Projects-list">
+
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Logo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quas numquam illo suscipit labore eveniet, soluta, voluptas unde quos enim, beatae molestiae iusto explicabo.</p>
+                    <button class="tablinks" onclick="projects_name(event, 'logo')" id="defaultOpen">See more</button>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quas numquam illo suscipit labore eveniet, soluta, voluptas unde quos enim, beatae molestiae iusto explicabo.</p>
+                    <button class="tablinks" onclick="projects_name(event, 'frontend')" id="defaultOpen">See more</button>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quas numquam illo suscipit labore eveniet, soluta, voluptas unde quos enim, beatae molestiae iusto explicabo.</p>
+                    <button class="tablinks" onclick="projects_name(event, 'Ui')" id="defaultOpen">See more</button>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <h2>Photography</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quas numquam illo suscipit labore eveniet, soluta, voluptas unde quos enim, beatae molestiae iusto explicabo.</p>
+                    <button class="tablinks" onclick="projects_name(event, 'Photography')" id="defaultOpen">See more</button>
+                </div>
+
+            </div>
+
+            <div id="logo" class="tabcontent">
+                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                <h2>Logo</h2>
+               
+                <div class="tabcontent-list">
+                    <img src="css/img/meLogo.svg" alt="">
+                    <img src="css/img/logo/mellowdy.png" alt="">
+                    <img src="css/img/logo/invictus.png" alt="">
+                    <img src="css/img/logo/melolog2.png" alt="">
+                </div>
+
+              </div>
+
+            <div id="frontend" class="tabcontent">
+                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                <h3>Frontend</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+
+            <div id="Ui" class="tabcontent">
+                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                <h3>UX/UI Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+
+            <div id="Ui" class="tabcontent">
+                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                <h3>UX/UI Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+
+            <div id="Photography" class="tabcontent">
+                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                <h3>Photography</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+              
+            </div>
+
+        </div>
+
+        <script src="js/projects.js">
+        </script>
+
+        <div id="contact">
+            <div class="container">
+                <h1 class="sub-title">Contact Me</h1>
+    
+                <div class="row">
+                    <div class="contact-left">
+                        <p><i class="fa-solid fa-envelope"></i>marcadriancbernales659@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>09613610908</p>
+    
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-discord"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                        <a href="Bernales-cv.pdf" class="btn btn2" download>Download CV</a>
+                        <!--CV soon insert file directory-->
+                    </div>
+    
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email">
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+
+    <script src="js/sidemenu.js">
+    </script>
+
+    <script src="js/scroll-reveal.js">
+    </script>
+
+    <script src="js/tab-link.js">
+    </script>
+
+</body>
+</html>
